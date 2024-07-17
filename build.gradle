@@ -18,10 +18,16 @@ repositories {
 }
 
 dependencies {
-    //STARTER
+    //WEB
     implementation 'org.springframework.boot:spring-boot-starter-web'
-  //  implementation 'org.springframework.boot:spring-boot-starter'
+
+    //BROKER
     implementation 'org.springframework.kafka:spring-kafka'
+
+    //VALIDATION
+    implementation 'org.springframework.boot:spring-boot-starter-validation:3.3.1'
+
+    //TEST
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     testImplementation 'org.springframework.kafka:spring-kafka-test'
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
